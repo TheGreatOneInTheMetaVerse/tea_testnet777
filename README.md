@@ -1,2 +1,3 @@
-tea_testnet777
-https://github.com/TheGreatOneInTheMetaVerse/tea_testnet777.git
+npm d-check-balance
+npm d-check-balance
+npm d-check-balance
