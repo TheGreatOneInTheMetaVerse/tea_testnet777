@@ -1,3 +1,4 @@
+npm d-check-balance
 from tea_wallet import TeaWallet
 from tea_testnet import TeaTestnet
 
