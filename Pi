@@ -1,0 +1,26 @@
+function calculatePi(places) {
+    let a = 1;
+    let b = 1 / Math.sqrt(2);
+    let t = 1 / 4;
+    let p = 1;
+
+    for (let i = 0; i < places; i++) {
+        let aNext = (a + b) / 2;
+        let bNext = Math.sqrt(a * b);
+        let tNext = t - p * (a - aNext) ** 2;
+        let pNext = 2 * p;
+
+        a = aNext;
+        b = bNext;
+        t = tNext;
+        p = pNext;
+    }
+
+    let pi = (a + b) ** 2 / (4 * t);
+    return pi.toFixed(places);
+}
+
+// Example usage:
+let decimalPlaces = 10; // Change this to the desired number of decimal places
+let piValue = calculatePi(decimalPlaces);
+console.log(`Pi approximation with ${decimalPlaces} decimal places: ${piValue}`);
